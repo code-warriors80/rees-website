@@ -1,4 +1,5 @@
 import header_img from "../../assets/header.png";
+import logo from "../../assets/logo.png";
 
 const ListItem = ({ title, icon }) => {
   return (
@@ -12,7 +13,10 @@ const ListItem = ({ title, icon }) => {
 const Landingpage = () => {
   return (
     <section className="px-4 lg:px-20 py-7">
-      <h1 className="text-2xl font-bold text-orange-400">Rees&#39; Kitchen</h1>
+      <div className="flex items-center">
+        <img src={logo} className="w-20 h-20"/>
+        <h1 className="text-2xl font-bold text-orange-400">Rees&#39; Kitchen</h1>
+      </div>
 
       <article className="flex flex-col lg:flex-row items-center justify-between gap-6 my-7 pt-11 lg:pt-0">
         <div>
@@ -30,14 +34,14 @@ const Landingpage = () => {
               className=" bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
               download
             >
-              Dowload from Google playstore
+              Dowload for Andriod
             </a>
             <a
               href="image_location.zip"
               className="border-2 border-orange-400 text-orange-400 text-center rounded-xl px-4 py-2"
               download
             >
-              Dowload From Apple playstore
+              Dowload For IOS
             </a>
           </div>
         </div>
@@ -59,9 +63,9 @@ const Landingpage = () => {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-between place-items-center py-9">
           <ListItem title="Fresh Food" icon="egg-fried" />
-          <ListItem title="Fast Delivery" icon="truck" />
           <ListItem title="Easy to place an order" icon="bag-check" />
           <ListItem title="Discount and offers" icon="percent" />
+          <ListItem title="Fast Delivery" icon="truck" />
         </div>
       </article>
     </section>
