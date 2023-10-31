@@ -1,5 +1,6 @@
-import header_img from "../../assets/header.png";
-import logo from "../../assets/logo.png";
+import React from 'react';
+import header_img from '../../assets/header.png';
+import logo from '../../assets/logo.png';
 
 const ListItem = ({ title, icon }) => {
   return (
@@ -11,17 +12,25 @@ const ListItem = ({ title, icon }) => {
 };
 
 const Landingpage = () => {
+  const downloadFile = () => {
+    // Create a link element to trigger the download
+    const link = document.createElement('a');
+    link.href = 'Rees_Kitchen.apk'; // Specify the file to be downloaded
+    link.download = 'Rees_Kitchen.apk'; // Specify the download file name
+    link.click();
+  };
+
   return (
     <section className="px-4 lg:px-20 py-7">
       <div className="flex items-center">
-        <img src={logo} className="w-20 h-20"/>
-        <h1 className="text-2xl font-bold text-orange-400">Rees&#39; Kitchen</h1>
+        <img src={logo} className="w-20 h-20" alt="Logo" />
+        <h1 className="text-2xl font-bold text-orange-400">Rees' Kitchen</h1>
       </div>
 
       <article className="flex flex-col lg:flex-row items-center justify-between gap-6 my-7 pt-11 lg:pt-0">
         <div>
           <h2 className="text-4xl lg:text-6xl font-bold text-orange-400">
-            Delicious taste at your at doorstep
+            Delicious taste at your doorstep
           </h2>
           <p className="my-6 text-base lg:text-lg text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -29,31 +38,26 @@ const Landingpage = () => {
             voluptatum laborum.
           </p>
           <div className="flex flex-col lg:flex-row gap-4 mb-4">
-            <a
-              href="image_location.zip"
-              className=" bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
-              download
+            <button
+              onClick={downloadFile}
+              className="bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
             >
-              Dowload for Andriod
-            </a>
+              Download for Android
+            </button>
             <a
-              href="image_location.zip"
+              href=""
               className="border-2 border-orange-400 text-orange-400 text-center rounded-xl px-4 py-2"
-              download
             >
-              Dowload For IOS
+              Download For iOS
             </a>
           </div>
         </div>
-        <img
-          src={header_img}
-          className="h-max lg:h-[500px] mix-blend-difference"
-        />
+        <img src={header_img} alt="Header" className="h-max lg:h-[500px] mix-blend-difference" />
       </article>
 
       <article className="py-20">
         <h2 className="text-2xl lg:text-4xl text-center font-bold text-orange-400">
-          Delicious taste at your at doorstep
+          Delicious taste at your doorstep
         </h2>
         <p className="my-4 text-center text-sm text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
