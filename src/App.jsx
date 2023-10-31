@@ -4,7 +4,7 @@ import Landingpage from "./pages/landingpage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/rees-website'>
       <Routes>
         <Route path="/" element={<Landingpage />} />
       </Routes>
