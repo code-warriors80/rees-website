@@ -1,6 +1,6 @@
-import React from 'react';
-import header_img from '../../assets/header.png';
-import logo from '../../assets/logo.png';
+import React from "react";
+import header_img from "../../assets/header.png";
+import logo from "../../assets/logo.png";
 
 const ListItem = ({ title, icon }) => {
   return (
@@ -12,14 +12,6 @@ const ListItem = ({ title, icon }) => {
 };
 
 const Landingpage = () => {
-  const downloadFile = () => {
-    // Create a link element to trigger the download
-    const link = document.createElement('a');
-    link.href = 'Rees_Kitchen.apk'; // Specify the file to be downloaded
-    link.download = 'Rees_Kitchen.apk'; // Specify the download file name
-    link.click();
-  };
-
   return (
     <section className="px-4 lg:px-20 py-7">
       <div className="flex items-center">
@@ -38,12 +30,13 @@ const Landingpage = () => {
             voluptatum laborum.
           </p>
           <div className="flex flex-col lg:flex-row gap-4 mb-4">
-            <button
-              onClick={downloadFile}
+            <a
+              href="/Rees_Kitchen.apk"
               className="bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
+              download
             >
               Download for Android
-            </button>
+            </a>
             <a
               href=""
               className="border-2 border-orange-400 text-orange-400 text-center rounded-xl px-4 py-2"
@@ -52,7 +45,11 @@ const Landingpage = () => {
             </a>
           </div>
         </div>
-        <img src={header_img} alt="Header" className="h-max lg:h-[500px] mix-blend-difference" />
+        <img
+          src={header_img}
+          alt="Header"
+          className="h-max lg:h-[500px] mix-blend-difference"
+        />
       </article>
 
       <article className="py-20">
