@@ -31,7 +31,7 @@ const Landingpage = () => {
           </p>
           <div className="flex flex-col lg:flex-row gap-4 mb-4">
             <a
-              href="/Rees_Kitchen.apk"
+              href="Ree's_Kitchen.apk"
               className="bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
               download
             >
