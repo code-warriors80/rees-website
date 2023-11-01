@@ -24,14 +24,12 @@ const Landingpage = () => {
           <h2 className="text-4xl lg:text-6xl font-bold text-orange-400">
             Delicious taste at your doorstep
           </h2>
-          <p className="my-6 text-base lg:text-lg text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum.
+          <p className="my-6 text-base lg:text-sm text-gray-400">
+          Indulge in the exquisite flavors of our culinary creations, meticulously prepared and delivered to your doorstep. From gourmet meals to mouthwatering treats, experience a world of delicious taste without stepping outside. Elevate your dining experience with the convenience of doorstep delivery, making every meal a delightful adventure for your taste buds.
           </p>
           <div className="flex flex-col lg:flex-row gap-4 mb-4">
             <a
-              href='https://download1654.mediafire.com/13oc2jk4k7sgIni6PeQ0fs2FCgS47CLj1_xawI35Y-91l72PQh3ENRSlpeecHcuGTB4SdtId_63AWFH7jZ5Z-Xq0WMbDe3yAn1_zDiNHi2vfX5RbvLvjehFKdtWNDxeB8IYbX_XSg3O4sBuud1zbK41mewKZS1VqLmgqm8ggLlDsARc/5xmw13kdrtgc1oh/Rees_Kitchen.apk'
+              href='https://download1649.mediafire.com/gbwysck69jfg6pXrR5STT5G2pb_HM-43Q41uXM-UZrQcAB3zh9ZtUhUR1W2NqdWK0r5Wtq4m6QmDi2teBFJMv8HCTRhiYIs-ObXyagY2YFr28PhcASh3kFub4Mt-uQNsPO1XyYPkrJoENsB6vui3rqKrNIquvH7auRljhJSB2mDp-nOx/ud26cptjv81co3a/Ree%5C%27s_Kitchen.apk'
               className="bg-orange-400 text-white text-center rounded-xl font-medium px-4 py-2"
               download
             >
